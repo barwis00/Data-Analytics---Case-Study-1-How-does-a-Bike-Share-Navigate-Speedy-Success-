@@ -51,21 +51,6 @@ colnames(bikeshare_df)
 any(bikeshare_df_2$ride_length_mins < 0) # checking for negative values
 View(bikeshare_df_2)
 
-#export clean data 
-# fwrite(bikeshare_df_2, "cyclistic_2021_all_clean.csv")
-
-# # selection of desired columns to keep for export
-# myvars <- c("ride_id", "rideable_type", "member_casual", "date", "month",
-#             "day_of_week", "ride_length_mins", "start_station_name",
-#             "end_station_name", "start_lat", "start_lng", "end_lat", "end_lng", "distance_km")
-# 
-# # store selected columns in a data frame
-# bikeshare_subset <- bikeshare_df_2[myvars]
-# 
-# View(bikeshare_subset)
-# # write subset data frame to CSV file
-# fwrite(bikeshare_subset, "cyclistic_2021_all_clean_subset.csv")
-
 #analyze summary ride length in minutes
 summary(bikeshare_df_2$ride_length_mins)
 
